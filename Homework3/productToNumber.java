@@ -11,16 +11,31 @@ mostrar
 1x2x3x4x5x6=720
 
 */
+import java.util.Scanner;
 
 public class productToNumber {   
 
    public static void main(String[] args) {
-   		int resultado = 0;
-   		System.out.println(args[0]);
+   		 Scanner numero=new Scanner(System.in);	
+     int resultado = 1;
+     int n=0,m,x;
+     String f="";
+     System.out.println("ingrese un numero");
+   	n=numero.nextInt();
+        x=1;
+        do{
+            resultado= resultado*x;
+          if(x==1){
+              f="1";
+          }else{
+            f=f+"x"+x;
+         
+          }
+             x++;
+        }while(x<=n);
 
 
-   		System.out.println("el producto es: "+resultado);
-      
-   }
+   		System.out.println("el producto es:"+f+" ="+resultado);
+		}
 
 }
