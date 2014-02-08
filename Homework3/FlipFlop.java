@@ -10,14 +10,14 @@ Flop si el numero es divisible dentro de 5
 FlipFlop si el numero es divisible dentro de 3 y 5
 y si no cumple ninguna de estas condiciones, solo mostrar el valor de ese numero.
 */
-import java.util.Scanner;
+
 public class FlipFlop {   
 
    public static void main(String[] args) {
-   	Scanner numero=new Scanner(System.in);
-        
+
+           int numeroActua;
    System.out.println("ingrese un numero para hacer FlipFlop");
-        int numeroActual = numero.nextInt();
+        int numeroActual = Integer.parseInt(args[0].toString()); 
    		
 for (int x =0;x<numeroActual+1;x++){
    		

@@ -7,16 +7,16 @@ Complete el algoritmo:
 Dado un numero 'n' identifique si es par o impar
 
 */
-import java.util.Scanner;
+
 public class oddEven {   
 
    public static void main(String[] args) {
       
-     Scanner numero=new Scanner(System.in);	
-     int n=0;
+   	
+     int n;
         
  	System.out.println("ingrese un numero para verificar si es par o impar");
-        n=numero.nextInt();
+        n=Integer.parseInt(args[0].toString()); 
    	if (n%2!=0){	
         // si el numero es impar
    			System.out.println("numero es impar");
